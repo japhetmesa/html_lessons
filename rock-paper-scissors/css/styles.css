@@ -2,6 +2,7 @@
   --primaryDark : #9f2b68;
   --primaryLight : #e6e6fa;
   --secondaryDark : #cf9fff;
+  --secondaryLight : #ffffff;
 }
 /*HEADER*/
 .header-container{
@@ -19,3 +20,16 @@ body{
   background-color: var(--secondaryDark);
 }
 /*SCOREBOARD*/
+main{
+  display: flex;
+  justify-content: center;
+  color: var(--secondaryLight);
+}
+.scoremessage{
+  font-size: 20px;
+  text-align: center;
+}
+.scoreinfo{
+  font-size: 32px;
+  text-align: center;
+}
