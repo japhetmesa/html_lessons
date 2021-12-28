@@ -1,0 +1,16 @@
+:root{
+  --primaryDark : #9f2b68;
+  --primaryLight : #e6e6fa;
+  --secondaryDark : #cf9fff;
+}
+/*HEADER*/
+.header-container{
+  background-color: var(--primaryDark);
+  display: flex;
+  justify-content: center;
+}
+.header{
+  color: var(--primaryLight);
+  font-size: 64px;
+  font-family: 'Roboto' serif;
+}
