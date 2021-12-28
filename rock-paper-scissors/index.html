@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple"
             rel="stylesheet"
         />
         <link rel="shortcut icon" href="favicon.ico" />
@@ -20,13 +20,54 @@
     </head>
     <body>
         <header class="header">
-            <h1 class="title">ROCK PAPER SCISSORS</h1>
+            <div class="font-effect-shadow-multiple">
+                <h1 class="title">ROCK PAPER SCISSORS</h1>
+            </div>
         </header>
         <main class="main">
             <div class="scoreboard">
-                <h2 class="scoreinfo" id="scoreInfo">Choose your fighter!</h2>
+                <h2 class="score-info" id="scoreInfo">Choose your fighter!</h2>
+                <h3 class="score-message" id="scoreMessage">Best of 5 wins</h3>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <div class="sign" id="playerSign">❔</div>
+                        <p class="score" id="playerScore">Player: 0</p>
+                      </div>
+                      <div class="score-box">
+                        <div class="sign" id="computerSign">❔</div>
+                        <p class="score" id="computerScore">Computer: 0</p>
+                      </div>
+                </div>
             </div>
+            <div class="buttons">
+                <button class="btn btn-square" id="rockBtn">
+                  <div class="sign">✊</div>
+                </button>
+                <button class="btn btn-square" id="paperBtn">
+                  <div class="sign">✋</div>
+                </button>
+                <button class="btn btn-square" id="scissorsBtn">
+                  <div class="sign">✌</div>
+                </button>
+              </div>
         </main>
+        <footer class="footer">
+            <p>
+              Copyright ©
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+              japhetmesa
+            </p>
+            <a href="https://github.com/japhetmesa" target="_blank">
+              <i class="fab fa-github"></i
+            ></a>
+          </footer>
+          <div class="modal" id="endgameModal">
+            <p class="modal-title" id="endgameMsg"></p>
+            <button class="btn btn-restart" id="restartBtn">Play again</button>
+          </div>
+          <div class="overlay" id="overlay"></div>
     </body>
     <script src="js/main.js"></script>
 </html>
