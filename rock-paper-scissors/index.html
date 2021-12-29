@@ -5,33 +5,29 @@
         <link rel="stylesheet" href="css/styles.css">
         <title>Rock Paper Scissors</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple"
-            rel="stylesheet"
-        />
         <link rel="shortcut icon" href="favicon.ico" />
-        <script
-            src="https://kit.fontawesome.com/4c536a6bd5.js"
-            crossorigin="anonymous"
-        ></script>
-    </head>
+        </head>
     <body>
-      <header class="header-container">
-        <h1 class="header">ROCK PAPER SCISSORS</h1>
-      </header>
-      <main class="main">
-        <div class="scoreboard-container">
-          <div class="score-info" id="scoreInfo">
-              <h2 class="scoreinfo">Choose your fighter</h2>
-          </div>
-          <div class="score-message" id="scoreMessage">
-              <h3 class="scoremessage">Best of 5 wins</h3>
-          </div>
-        </div>
-      </main>
+      <header>
+        <p class="title">ROCK PAPER SCISSORS GAME</p>
+      </header>   
+      <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          japhetmesa
+        </p>
+        <a href="https://github.com/japhetmesa" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+      </footer>
+      <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
     </body>
     <script src="js/main.js"></script>
 </html>
