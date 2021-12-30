@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="css/styles.css">
         <title>Rock Paper Scissors</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" href="favicon.ico" />
         </head>
     <body>
       <header>
@@ -14,13 +13,13 @@
       <div class="score-board">
         <p class="badges" id="user-label">User</p>
         <p class="badges" id="computer-label">Comp</p>
-        <p class="scores" id="Scores">0:0</p>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
       </div>
       <p class="score-message">Choose your fighter.</p>
       <div class="moves">
-          <img src="imgs/Rock.png" class="sign">
-          <img src="imgs/Paper.png" class="sign">
-          <img src="imgs/Scissors.png" class="sign">
+          <img src="imgs/Rock.png" class="sign" id="r">
+          <img src="imgs/Paper.png" class="sign" id="p">
+          <img src="imgs/Scissors.png" class="sign" id="s">
       </div>
       <p class="action">Make your move</p>
       </body>
