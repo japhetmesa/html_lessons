@@ -10,24 +10,19 @@
     <body>
       <header>
         <p class="title">ROCK PAPER SCISSORS GAME</p>
-      </header>   
-      <footer class="footer">
-        <p>
-          Copyright ©
-          <script>
-            document.write(new Date().getFullYear())
-          </script>
-          japhetmesa
-        </p>
-        <a href="https://github.com/japhetmesa" target="_blank">
-          <i class="fab fa-github"></i
-        ></a>
-      </footer>
-      <div class="modal" id="endgameModal">
-        <p class="modal-title" id="endgameMsg"></p>
-        <button class="btn btn-restart" id="restartBtn">Play again</button>
+      </header>
+      <div class="score-board">
+        <p class="badges" id="user-label">User</p>
+        <p class="badges" id="computer-label">Comp</p>
+        <p class="scores" id="Scores">0:0</p>
       </div>
-      <div class="overlay" id="overlay"></div>
-    </body>
+      <p class="score-message">Choose your fighter.</p>
+      <div class="moves">
+          <img src="imgs/Rock.png" class="sign">
+          <img src="imgs/Paper.png" class="sign">
+          <img src="imgs/Scissors.png" class="sign">
+      </div>
+      <p class="action">Make your move</p>
+      </body>
     <script src="js/main.js"></script>
 </html>
